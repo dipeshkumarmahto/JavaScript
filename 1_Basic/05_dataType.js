@@ -1,5 +1,7 @@
 // Data Type:- 
 
+const { type } = require("node:os");
+
 // A. Primitive data type:-
 
 
@@ -58,3 +60,39 @@ let myFunction = function(){
 // check dataType using (typeof)
 
 // console.log(typeof outsideTemp);  //object
+
+
+// ************************ Memory *****************************
+
+// There are two types of memory :- 
+
+// 1. Stack =>The Stack is used to store primitive values and information about function calls/execution.
+//  All primitive data type(Number, String, Boolean, Null, Undefined, Symbol, BigInt)
+
+// eg:-
+
+let myName = "Dipesh";
+
+let anotherName = myName;
+
+anotherName = "Samresh"
+
+// console.log(myName)
+// console.log(anotherName)
+
+// 2. Heap  => The Heap is used for objects and other dynamically allocated data.
+// All Non-primitive data type(Objects, Function, Arrays)
+
+// eg:-
+
+let userOne = {
+    name:"Samresh",
+    email:"samresh@gmail.com"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "dipesh@gmail.com"
+
+console.log(userOne)
+console.log(userTwo)
