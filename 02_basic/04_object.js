@@ -95,4 +95,46 @@ const users = [
 
 // console.log(tinderUser.hasOwnProperty("isLoggin"))   //true
 
-console.log(tinderUser.hasOwnProperty("isLogged"))     //false
+// console.log(tinderUser.hasOwnProperty("isLogged"))     //false
+
+
+// **********Object destructuring & Json API
+
+const course = {
+    coursename:"javaScript",
+    courseInstructor:"hitesh sir",
+    fees:999
+}
+
+// yanha ham baar baar course. use kare rhe hai 
+console.log(course.courseInstructor, course.coursename, course.fees)   //hitesh sir javaScript 999
+
+// now, we use object destructure
+
+const {courseInstructor, fees, coursename} = course
+
+console.log(courseInstructor, coursename, fees)  //hitesh sir javaScript 999
+
+// ***********API  JSON*************
+
+/*
+API  :-  Application Programming Interface
+JSON :-  JavaScript Object Notation
+
+
+ JSON ke format me 
+{
+    "name":"Dipesh",
+    "age":21,
+    "coursename":"javaScript"
+}
+
+Array ke format me
+
+[
+    {},
+    {}, 
+    {}, 
+]
+*/
+
