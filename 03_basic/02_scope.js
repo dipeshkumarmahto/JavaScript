@@ -48,8 +48,6 @@ function addOne(num) {
 // addTwoNumber(2)  //ReferenceError: addTwoNumber is not defined
 
 // jab kisi variable me store karenge toh error dega
-
-
 const addTwo = function addTwo(num2){
     return num2 + 2    
 }
