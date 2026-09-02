@@ -78,13 +78,11 @@
 
 // Async Callbacks
 
-// 1. Microtask Queue → Higher scheduling priority
-//                     Promise
-//                     callbacks etc.
+// 1. Microtask Queue → Higher scheduling priority.
+//                     Promise, callbacks etc.
 
-// 2. Task Queue → Lower scheduling priority
-//                 setTimeout
-//                 DOM Events etc.
+// 2. Task Queue → Lower scheduling priority.
+//                 setTimeout, DOM Events etc.
 
 
 // Example:- 
