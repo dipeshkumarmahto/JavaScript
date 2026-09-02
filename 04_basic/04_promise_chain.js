@@ -124,4 +124,4 @@ getBread()
     console.log(err)
 })
 
-for running all promise in just one promise using promiseAll
+// for running all promise in just one promise using promiseAll
